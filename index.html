@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+    KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="imagetoolbar" content="no">
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <title>Gilterella</title>
+    </head>
+    <body>
+        <center>
+
+        <div class="question-1">
+            <h1>Would you prefer a dress?</h1>
+            <select id="dressChoice">
+                <option></option>
+                <option selected="selected" value="Yes">Yes</option>
+                <option selected="selected" value="No">No</option>
+            </select> 
+            <br>
+            <br>
+        
+        <h1> or </h1>
+
+            <br>
+            <h1>What bottoms would you prefer?</h1>
+            <select id="bottomsList">
+                <option></option>
+                <option value="pants">Pants</option>
+                <option value="shorts">Shorts</option>
+                <option value="skirts">Skirts</option>
+            </select>
+
+            <h1>What top would you prefer?</h1>
+            <select id="topsList">
+                <option></option>
+                <option value="blouses">Blouses</option>
+                <option value="knits">Knits</option>
+                <option value="other">Other</option>
+            </select>
+            <br>
+            <br>
+        
+            <h1>What shoes would you prefer?</h1>
+            <select id="shoesList">
+                <option></option>
+                <option value="Booties">Booties</option>
+                <option value="Boots">Boots</option>
+                <option value="Flats">Flats</option>
+                <option value="Loafers">Loafers</option>
+                <option value="Other shoes">Other Shoes</option>
+                <option value="Oxfords">Oxfords</option>
+                <option value="Pumps">Pumps</option>
+                <option value="Sandals">Sandals</option>
+            </select>
+
+            <br><button style="float:right" class="cta-nav">NEXT</button>
+        </div>
+
+        <div class="question-2">
+            <h1>What color bottoms would you prefer?</h1>
+                <select id="bColors"></select>
+            <br>
+            <br>
+            <h1>What color top would you prefer?</h1>
+                <select id="tColors"></select>
+
+                <br><button style="float:right" class="cta-nav1">NEXT</button>
+        </div>
+
+        <div class="question-2-alt">
+            <h1>What color dress would you prefer?</h1>
+            <select id="dColors"></select>
+
+            <br><button style="float:right" class="cta-nav2">NEXT</button>
+        </div>
+
+        <div class="question-3">
+            <div id="t"></div>
+            <div id="b"></div>
+            <div id="s"></div>
+            <br><button style="float:center" class="rand">WAVE MAGIC WAND</button>
+        </div>
+
+        <div class="question-3-alt">
+            <div id="d"></div>
+            <div id="s1"></div>
+            <br><button style="float:center" class="rand1">WAVE MAGIC WAND</button>
+        </div>
+
+        <button style="float:left" class="home" onClick="window.location.reload()">HOME</button>
+
+
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/apigilt.js"></script>
+        <script type="text/javascript" src="js/gilterella.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+
+            app.initialize();
+            Gilterella.init();
+            
+        </script>
+
+    </body>
+</html>
